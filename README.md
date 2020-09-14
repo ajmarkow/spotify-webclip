@@ -2,7 +2,7 @@
 
 Searches for song playing or mentioned and sends the info to spotify for user to add to their favorites., September 14, 2020
 
-By **_Johnny Duverseau, Joseph Karnafel, Adam Mansell, AJ Markow, & Ophelia Swen_**
+By **_Johnny Duverseau, Joseph Karnafel, AJ Markow, & Ophelia Swen_**
 
 ## Description
 
@@ -10,14 +10,15 @@ By **_Johnny Duverseau, Joseph Karnafel, Adam Mansell, AJ Markow, & Ophelia Swen
 
   - Team has tentatively decided on using AudD API.
 
-- Webpage or Web App that person interacts with to start search for a song playing.
+- Webpage or Web App that person interacts with to start search for a song.
+  - User drags in an mp3
 - Somehow stores the name of songs the person has searched for, and links person to spotify.
 - Doesn’t connect directly to users spotify. Adds songs to object on page, and users can then remove items or check off as added to their library.
-- Uses express framework on node and passport-spotify node module to enable spotify authentication and adding items to users favorites.
+  - Uses express framework on node and passport-spotify node module to enable spotify authentication and adding items to users favorites.
 
 ## Setup/Installation Requirements
 
-{Setup Requirements}\_
+{Setup Requirements}
 
 ## Known Bugs
 
@@ -35,7 +36,7 @@ Contact any of the contributors listed on this repository.
 
 MIT License
 
-Copyright (c) 2020 **_Johnny Duverseau, Joseph Karnafel, Adam Mansell, AJ Markow, & Ophelia Swen_**
+Copyright (c) 2020 **_Johnny Duverseau, Joseph Karnafel, AJ Markow, & Ophelia Swen_**
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files the Software, to deal
