@@ -4,7 +4,10 @@
   "description": "Searches for song playing or mentioned and sends the info to spotify for user to add to their favorites., September 14, 2020",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode development",
+    "start": "npm run build & webpack-dev-server --open --mode development",
+    "lint": "eslint src/*.js",
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
