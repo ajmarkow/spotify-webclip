@@ -13,7 +13,7 @@ By **_Johnny Duverseau, Joseph Karnafel, Adam Mansell, AJ Markow, & Ophelia Swen
 - Webpage or Web App that person interacts with to start search for a song playing.
 - Somehow stores the name of songs the person has searched for, and links person to spotify.
 - Doesn’t connect directly to users spotify. Adds songs to object on page, and users can then remove items or check off as added to their library.
-- _Stretch goal for project: Adding login functionality to the service._
+- Uses express framework on node and passport-spotify node module to enable spotify authentication and adding items to users favorites.
 
 ## Setup/Installation Requirements
 
