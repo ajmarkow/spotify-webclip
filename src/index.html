@@ -25,11 +25,11 @@
       <label for='songupload'>The audio you want to identify (mp3):</label>
     </div>
     <div class="col-4 float-right extrapadding">
-     <form>
-      <input type="file" accept=".mp3" id='songupload' enctype="multipart/form-data" class='btn btn-dark'>
+     <form action="https://api.audd.io/" method="post" enctype="multipart/form-data">
+      <input type="file" id='songupload' class='btn btn-dark'>
       <br>
       <br>
-      <button class="btn btn-dark" id="musicsubmit">Send it to Music Finder</button>
+      <button type="submit" class="btn btn-dark" id="musicsubmit">Send it to Music Finder</button>
     </form>
   </div>
    </div>
