@@ -1,13 +1,20 @@
 export default class RecognizeSpotify {
-  static async getSpotify() {
-    try {
-      const response = await fetch(``);
-      if (!response.ok) {
-        throw Error(response.statusText);
-      }
-      return response.json();
-    } catch (error) {
-      return error.message;
-    }
+  static getSong(url) {
+    var data = {
+      api_token: process.env.API_KEY,
+      url: url,
+      return: "apple_music,spotify",
+    };
+    return data;
   }
 }
+
+//   static getSong(url) {
+//     var data = {
+//       'api_token': process.env.API_KEY,
+//       'url': url,
+//       'return': 'apple_music,spotify',
+//     };
+//     return data;
+//   }
+// }
