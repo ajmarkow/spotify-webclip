@@ -5,11 +5,11 @@ import "./css/styles.css";
 import RecognizeSpotify from "./Recognize.js";
 
 $(document).ready(function () {
-  $("#test-button").click(function () {
-    let input = "https://audd.tech/example1.mp3";
+  $("#musicsubmit").click(function (event) {
+    event.preventDefault();
+    let input = $("input:file").val();
+    console.log(input);
     let data = RecognizeSpotify.getSong(input);
-    $.getJSON("https://api.audd.io/?jsonp=?", data, function (result) {
-      console.log(result.result);
-    });
+    console.log(data);
   });
 });

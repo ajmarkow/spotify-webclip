@@ -22,11 +22,11 @@
    <hr>
    <div class="row">
     <div class="col-8 extrapadding text-center">
-      <label for='songupload'>The audio you want to identify:</label>
+      <label for='songupload'>The audio you want to identify (mp3):</label>
     </div>
     <div class="col-4 float-right extrapadding">
      <form>
-      <input type="file" id='songupload' class='btn btn-dark'>
+      <input type="file" accept=".mp3" id='songupload' enctype="multipart/form-data" class='btn btn-dark'>
       <br>
       <br>
       <button class="btn btn-dark" id="musicsubmit">Send it to Music Finder</button>
