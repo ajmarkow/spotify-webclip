@@ -58,4 +58,4 @@ SOFTWARE.
 
 ## References
 
--
+## Animated background code referenced from "https://codemyui.com/sliding-diagonals-background-color-effect/"
