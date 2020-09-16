@@ -77,5 +77,23 @@ h1 {
 }
 
 #preview {
+  /* display: none; */
+  margin-top: 20px;
+}
+
+.bg-gray {
+  background-color: rgb(63, 63, 63);
+}
+
+#output-cont {
+  color: white;
   display: none;
+}
+
+#song-info-text {
+  text-align: center;
+}
+
+.top-margin {
+  margin-top: 20px;
 }
