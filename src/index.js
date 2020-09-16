@@ -1,22 +1,27 @@
 import $ from "jquery";
-import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/styles.css";
 import Convert from "./Recognize.js";
 import base64Encoder from "./toBase64.js";
+const fileInput = $("#fileupload").val();
 
 $(document).ready(function () {
+  // eslint-disable-next-line no-undef
   let client = filestack.init(process.env.FILESTACKAPIKEY);
   const options = {
     displayMode: "inline",
     container: "#inline",
     accept: "audio/*",
     fromSources: ["local_file_system"],
+    uploadInBackground: false,
+    onUploadDone: getFilestackURL,
   };
 
   client.picker(options).open();
+  client.storeURL(transformedUrl).then((res) => console.log(res));
   $("#musicsubmit").click(function (event) {
     event.preventDefault();
+    console.log(client.filesUploaded[0].url);
     // const client = filestack.init(process.env.FILESTACKAPIKEY);
     base64Encoder(event);
     let url = '$("input:file").val()';
@@ -24,6 +29,11 @@ $(document).ready(function () {
       console.log(response);
     });
   });
+  function getFilestackURL(result) {
+    const fileData = result.filesUploaded[0].url;
+    console.log(fileData);
+    return fileData;
+  }
 });
 
 // function getElements(response) {

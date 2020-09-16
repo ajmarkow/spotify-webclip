@@ -1,1 +1,3 @@
-export default class fileUploader {}
+export default class fileUploader {
+  client.onFileUploadFinished 
+}
