@@ -41,7 +41,57 @@
  <div class="row extrapadding justify-content-center">
   <p class='text-center'><em>Results show here.</em></p>
 </div>
-<div class="row" id="results">
+<div class="container" id="output-cont">
+  
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card bg-gray">
+        <div class="card-body">
+            <h3 class="row extrapadding justify-content-center" id="song-title"></h3>
+            <h4 class="row extrapadding justify-content-center" id="artist"></h4>
+          <img id="album-cover" src="">
+          <audio controls src="" id="preview">Preview</audio>
+        </div>
+      </div> 
+    </div>
+    <div class="col-md-8">
+      <div class="card bg-gray">
+        <div class="card-body">
+          <p class="card-title" id="song-info-text">Song Info</p>
+        </div>
+      </div>
+      <div class="row top-margin">
+        <div class="col-md-6">
+          <div class="card bg-gray info-col">
+            <div class="card-body">
+              <h6>Album:</h6>
+              <p id="album-name"></p>
+              <h6>Album type:</h6>
+              <p id="album-type"></p>
+              <h6>Duration:</h6>
+              <p id="duration"></p>
+              <h6>Popularity:</h6>
+              <p id="popularity"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card bg-gray info-col">
+            <div class="card-body">
+              <h6>Explicit:</h6>
+              <p id="explicit"></p>
+              <h6>Release date:</h6>
+              <p id="release-date"></p>
+              <h6>Label:</h6>
+              <p id="label"></p>
+              <h6>Link:</h6>
+              <a href="" id="spotify-link">Open in Spotify!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   
 </div>
  </div> 
