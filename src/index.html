@@ -11,21 +11,13 @@
  <div class="fluid-container">
    <p class='display-2 title'>Webclip for Spotify  <i class="fab fa-spotify"></i></p>
    <p></p>
-   <div class="row">
-    <div class="col-8 extrapadding text-center">
-      <p>Spotify Sign In</p>
-    </div>
-    <div class="col-4 float-right extrapadding">
-      <button class="btn btn-dark">Login to Spotify</button>
-    </div>
-   </div>
    <hr>
    <div class="row">
     <div class="col-8 extrapadding text-center">
-      <label for='songupload'>The audio you want to identify (mp3):</label>
+      <label for='songupload'>The audio you want to identify (mp3) </label>
     </div>
     <div class="col-4 float-right extrapadding">
-     <form action="https://api.audd.io/" method="post" enctype="multipart/form-data">
+     <form action="https://api.audd.io/" method="post" enctype="multipart/form-data" onchange="readFile(this)">
       <input type="file" id='songupload' class='btn btn-dark'>
       <br>
       <br>
@@ -36,7 +28,7 @@
    <hr>
    <div class="row">
      
-     <div class='col-8 extrapadding text-center'><p>Add to spotify/song info stuff.</p></div>
+     <div class='col-8 extrapadding text-center'><p>Open it in your spotify:</p></div>
      <div class='col-4 float-right extrapadding'><button type="button" class="btn btn-dark">Add It!</button></div>
    </div>
  
