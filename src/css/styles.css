@@ -75,3 +75,7 @@ h1 {
   background-color: black;
   color: white;
 }
+
+#preview {
+  display: none;
+}
