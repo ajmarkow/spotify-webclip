@@ -69,6 +69,7 @@ function uploadEvents(result) {
   let url = getFilestackURL(result);
   Convert.getSong(url).then(function (response) {
     console.log(response.result);
+    $("#resultsshowhere").hide();
     showResults(response.result);
   });
 }
