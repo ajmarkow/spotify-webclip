@@ -7,10 +7,11 @@ import getDuration from "./getDuration.js";
 
 function showResults(obj){
   if (obj.spotify){
+    let releaseDate = obj.release_date.split("-")
+    let isExplicit = obj.spotify.explicit ? "Yes" : "No"
+    let artistsArray = [];
     $("#song-title").text(obj.title);
-
     if (obj.spotify.artists.length > 1) {
-      let artistsArray = [];
       for (let i = 0; i < obj.spotify.artists.length; i++){
         artistsArray.push(obj.spotify.artists[i].name);
       }
@@ -25,6 +26,10 @@ function showResults(obj){
     $("#album-type").text(obj.spotify.album.album_type);
     $("#duration").text(`${getDuration(obj.spotify.duration_ms)[0]}:${getDuration(obj.spotify.duration_ms)[1]}`);
     $("#popularity").text(`${obj.spotify.popularity}/100`);
+    $("#explicit").text(isExplicit);
+    $("#release-date").text(`${releaseDate[1]}/${releaseDate[2]}/${releaseDate[0]}`);
+    $("#label").text(obj.label);
+    $("#spotify-link").attr("href", obj.spotify.external_urls.spotify);
   } else {
     $("#song-title").text("Could not find Spotify data.");
   }

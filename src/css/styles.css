@@ -97,3 +97,7 @@ h1 {
 .top-margin {
   margin-top: 20px;
 }
+
+.info-col {
+  height: 400px;
+}
