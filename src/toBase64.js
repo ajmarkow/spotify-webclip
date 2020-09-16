@@ -1,19 +1,19 @@
-export default class base64Encoder {
-  static readFile(input) {
-    let reader = new FileReader();
-    try {
-      const file = input.files[0];
-      reader.readAsArrayBuffer(file);
-      reader.onload = (file) => {
-        let encoded = reader.result.split(",")[1];
-        console.log(encoded);
-        return encoded;
-      };
-    } catch (error) {
-      alert("error");
-    }
-  }
-}
+// export default class base64Encoder {
+//   static readFile(input) {
+//     let reader = new FileReader();
+//     try {
+//       const file = input.files[0];
+//       reader.readAsArrayBuffer(file);
+//       reader.onload = (file) => {
+//         let encoded = reader.result.split(",")[1];
+//         console.log(encoded);
+//         return encoded;
+//       };
+//     } catch (error) {
+//       alert("error");
+//     }
+//   }
+// }
 
 // var myArray = new ArrayBuffer(512);
 // var longInt8View = new Uint8Array(myArray);
