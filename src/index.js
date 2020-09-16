@@ -6,8 +6,17 @@ import Convert from "./Recognize.js";
 import base64Encoder from "./toBase64.js";
 
 $(document).ready(function () {
+  let client = filestack.init(process.env.FILESTACKAPIKEY);
+  const options = {
+    displayMode: "inline",
+
+    container: "#inline",
+  };
+
+  client.picker(options).open();
   $("#musicsubmit").click(function (event) {
     event.preventDefault();
+    // const client = filestack.init(process.env.FILESTACKAPIKEY);
     base64Encoder(event);
     let url = '$("input:file").val()';
     Convert.getSong(url).then(function (response) {

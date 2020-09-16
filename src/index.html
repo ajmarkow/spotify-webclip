@@ -17,8 +17,9 @@
       <label for='songupload'>The audio you want to identify (mp3) </label>
     </div>
     <div class="col-4 float-right extrapadding">
+      <div id='inline'></div>
      <form action="https://api.audd.io/" method="post" enctype="multipart/form-data" onchange="readFile(this)">
-      <input type="file" id='songupload' class='btn btn-dark'>
+      <script src="//static.filestackapi.com/filestack-js/3.x.x/filestack.min.js"></script>
       <br>
       <br>
       <button type="submit" class="btn btn-dark" id="musicsubmit">Send it to Music Finder</button>
