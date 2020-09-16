@@ -1,8 +1,8 @@
 import $ from "jquery";
-import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/styles.css";
 import Convert from "./Recognize.js";
+import getFilestackURL from "./fileupload.js";
 import getDuration from "./getDuration.js";
 
 function showResults(obj){
@@ -36,9 +36,22 @@ function showResults(obj){
 }
 
 $(document).ready(function () {
+  // eslint-disable-next-line no-undef
+  let client = filestack.init(process.env.FILESTACKAPIKEY);
+  const options = {
+    displayMode: "inline",
+    container: "#inline",
+    accept: "audio/*",
+    fromSources: ["local_file_system"],
+    uploadInBackground: false,
+    onUploadDone: getFilestackURL,
+  };
+
+  client.picker(options).open();
   $("#musicsubmit").click(function (event) {
     event.preventDefault();
-    let url = "https://teamweek1epicodus.s3-us-west-2.amazonaws.com/song-3.mp3";//$("input:file").val();
+    let url = getFilestackURL();
+    
     Convert.getSong(url).then(function (response) {
       console.log(response.result);
       showResults(response.result);
