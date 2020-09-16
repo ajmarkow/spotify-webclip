@@ -3,7 +3,7 @@
 export default class Convert {
   static getSong(url) {
     return fetch(
-      `https://api.audd.io/api_token=${process.env.AUDDAPIKEY}&url=${url}&return=spotify`
+      `https://api.audd.io/recognize?api_token=${process.env.AUDDAPIKEY}&url=${url}&return=spotify`
     )
       .then(function (response) {
         if (!response.ok) {
