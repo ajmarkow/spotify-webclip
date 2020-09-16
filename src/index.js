@@ -9,8 +9,9 @@ $(document).ready(function () {
   let client = filestack.init(process.env.FILESTACKAPIKEY);
   const options = {
     displayMode: "inline",
-
     container: "#inline",
+    accept: "audio/*",
+    fromSources: ["local_file_system"],
   };
 
   client.picker(options).open();

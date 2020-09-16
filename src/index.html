@@ -16,21 +16,19 @@
     <div class="col-8 extrapadding text-center">
       <label for='songupload'>The audio you want to identify (mp3) </label>
     </div>
-    <div class="col-4 float-right extrapadding">
-      <div id='inline'></div>
-     <form action="https://api.audd.io/" method="post" enctype="multipart/form-data" onchange="readFile(this)">
-      <script src="//static.filestackapi.com/filestack-js/3.x.x/filestack.min.js"></script>
+    <div class="col-4 float-right extrapadding" id="inline">
+        <script src="//static.filestackapi.com/filestack-js/3.x.x/filestack.min.js"></script>        
+      <br>
+      <button type="submit" class="btn btn-dark text-nowrap" id="filetofilestack">Upload File</button>
       <br>
       <br>
-      <button type="submit" class="btn btn-dark" id="musicsubmit">Send it to Music Finder</button>
-    </form>
-  </div>
    </div>
+  </div>
    <hr>
    <div class="row">
      
      <div class='col-8 extrapadding text-center'><p>Open it in your spotify:</p></div>
-     <div class='col-4 float-right extrapadding'><button type="button" class="btn btn-dark">Add It!</button></div>
+     <div class='col-4 float-right extrapadding'><button type="button" class="btn btn-dark text-nowrap">Add It!</button></div>
    </div>
  
    <div class="bg"></div>
@@ -47,11 +45,7 @@
 <div class="row" id="results">
   
 </div>
-</body>
-</html>
  </div> 
-</body>
-</html>
  </div> 
 </body>
 </html>
