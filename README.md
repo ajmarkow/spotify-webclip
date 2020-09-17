@@ -30,6 +30,11 @@ Contact any of the contributors listed on this repository.
 
 APIs, Bootstrap, CSS, Git, HTML, JavaScript, Node.js
 
+We used these APIs:
+
+Audd API: [https://www.filestack.com/docs/api/](https://www.filestack.com/docs/api/)
+Filestack API: [https://www.filestack.com/docs/api/](https://www.filestack.com/docs/api/)
+
 ### License
 
 MIT License
