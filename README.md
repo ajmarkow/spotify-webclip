@@ -1,4 +1,4 @@
-# \Web Clip for Spotify™ <img align="right" alt="Spotify" width="35px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/spotify.svg" />
+# Web Clip for Spotify™ <img align="right" alt="Spotify" width="35px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/spotify.svg" />
 
 Searches for song playing or mentioned and sends the info to spotify for user to add to their favorites., September 14, 2020
 
