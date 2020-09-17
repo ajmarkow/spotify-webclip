@@ -7,9 +7,6 @@ By **_Johnny Duverseau, Joseph Karnafel, AJ Markow, & Ophelia Swen_**
 ## Description
 
 - Recognizes the song that’s playing currently using an audio content recognition API.
-
-  - Team has tentatively decided on using AudD API.
-
 - Webpage or Web App that person interacts with to start search for a song.
 - User drags in an mp3.
 - Somehow stores the name of songs the person has searched for, and links person to spotify.
