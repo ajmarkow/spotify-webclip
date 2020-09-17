@@ -32,7 +32,7 @@ APIs, Bootstrap, CSS, Git, HTML, JavaScript, Node.js
 
 We used these APIs:
 
-Audd API: [https://www.filestack.com/docs/api/](https://www.filestack.com/docs/api/)
+Audd API: [https://docs.audd.io/](https://docs.audd.io/)
 Filestack API: [https://www.filestack.com/docs/api/](https://www.filestack.com/docs/api/)
 
 ### License
