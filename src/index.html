@@ -26,9 +26,11 @@
     <hr>
     <div class="row">
       <div class='col-8 extrapadding text-center'>
-        <p>Open it in your spotify:</p>
+        <p>Or enter a snippet of song lyrics:</p>
       </div>
       <div class='col-4 float-right extrapadding'>
+        <input type="text" id="lyrics-input"><br>
+        <button type="submit" class="btn btn-dark text-nowrap" id="lyrics-submit">Search</button>
       </div>
     </div>
     <div class="bg"></div>
@@ -88,6 +90,10 @@
         </div>
       </div>
     </div>
+  </div>
+  <div class="container" id="lyrics-cont">
+    <h4 id="lyrics-title"></h4>
+    <p id="lyrics"></p>
   </div>
 </body>
 </html>

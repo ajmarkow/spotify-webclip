@@ -4,6 +4,7 @@ import "./css/styles.css";
 import Convert from "./Recognize.js";
 import getFilestackURL from "./fileupload.js";
 import getDuration from "./getDuration.js";
+import Lyric from "./getLyrics.js"
 
 function showResults(obj) {
   if (obj.spotify) {
@@ -41,6 +42,13 @@ function showResults(obj) {
   }
 }
 
+function showLyrics(obj){
+  $("#lyrics-title").text(obj[0].full_title);
+  let lyrics = obj[0].lyrics.replace(/\r?\n/g, '<br />')
+  $("#lyrics").html(lyrics);     
+  console.log(lyrics)
+}
+
 $(document).ready(function () {
   // eslint-disable-next-line no-undef
   let client = filestack.init(process.env.FILESTACKAPIKEY);
@@ -63,6 +71,15 @@ $(document).ready(function () {
       showResults(response.result);
     });
   });
+
+  $("#lyrics-submit").click(function(event){
+    event.preventDefault();
+    let snippet = $("#lyrics-input").val();
+    Lyric.getLyric(snippet.replace(/\s/g, "-")).then(function(response){
+      console.log(response.result);
+      showLyrics(response.result);
+    });
+  });
 });
 
 function uploadEvents(result) {
@@ -73,3 +90,8 @@ function uploadEvents(result) {
     showResults(response.result);
   });
 }
+
+
+
+
+
